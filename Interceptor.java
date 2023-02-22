@@ -1,5 +1,5 @@
-package Interceptor;
 
+//Interceptor
 public @interface Interceptor {
     
 }

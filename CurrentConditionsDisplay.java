@@ -1,8 +1,4 @@
-package headfirst.observer.weather;
-
-import headfirst.observer.Observer;
-import headfirst.observer.Subject;
-
+//Concrete Framework
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 	private float temperature;
 	private float humidity;

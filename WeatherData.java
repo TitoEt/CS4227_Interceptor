@@ -1,4 +1,4 @@
-package headfirst.observer;
+//Context Object
 
 import java.util.*;
 
