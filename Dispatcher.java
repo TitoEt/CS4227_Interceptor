@@ -8,8 +8,8 @@ import java.util.List;
 public class Dispatcher {
     private List<Interceptor> interceptors = new ArrayList<>();
 
-     public void registerInterceptor(Interceptor interceptor) {
-        interceptors.add(interceptor);
+     public void registerInterceptor(LoggingInterceptor loggingInterceptor) {
+        interceptors.add((LoggingInterceptor) loggingInterceptor);
     }
 
     public void removeInterceptor(Interceptor interceptor) {
@@ -34,7 +34,7 @@ public class Dispatcher {
 
     public void dispatchPressureChange(float pressure) {
         for (Interceptor interceptor : interceptors) {
-            if (interceptor instanceof Interceptor) {
+            if (interceptor instanceof AlertInterceptor) {
                 ((AlertInterceptor) interceptor).onPressureChange(pressure);
             }
         }

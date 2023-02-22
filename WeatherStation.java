@@ -14,15 +14,13 @@ public class WeatherStation {
 		weatherData.setMeasurements(80, 65, 30.4f);
 		weatherData.setMeasurements(82, 70, 29.2f);
 		weatherData.setMeasurements(78, 90, 29.2f);
+
+		Dispatcher dispatcher = new Dispatcher();
+		LoggingInterceptor loggingInterceptor = new LoggingInterceptor();
+		dispatcher.registerInterceptor(loggingInterceptor);
+		dispatcher.dispatchTemperatureChange(25.0);
+		dispatcher.dispatchHumidityChange(60.0);
+		dispatcher.dispatchPressureChange(1013.25f);
 	}
 
-	Dispatcher dispatcher = new Dispatcher();
-	LoggingInterceptor loggingInterceptor = new LoggingInterceptor();
-	dispatcher.registerInterceptor(loggingInterceptor);
-	
-	dispatcher.dispatchTemperatureChange(25.0);
-	
-	dispatcher.dispatchHumidityChange(60.0);
-	
-	dispatcher.dispatchPressureChange(1013.25f);
 }
