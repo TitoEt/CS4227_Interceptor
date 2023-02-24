@@ -1,7 +1,7 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class WeatherDataTest {
+public class WeatherStation {
 
 	@Test
 	public void testWeatherData() {
@@ -20,6 +20,5 @@ public class WeatherDataTest {
 		dispatcher.registerInterceptor(loggingInterceptor);
 		dispatcher.dispatchTemperatureChange(25.0);
 		dispatcher.dispatchHumidityChange(60.0);
-		dispatcher.dispatchPressureChange(1013.25f);
     }
 }

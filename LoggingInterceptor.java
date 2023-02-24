@@ -9,14 +9,14 @@ public class LoggingInterceptor implements Interceptor {
         System.out.println("Humidity logging interception - changed to " + humidity);
         }
 
-        @Override
-        public Class<? extends Annotation> annotationType() {
-            // TODO Auto-generated method stub
-            throw new UnsupportedOperationException("Unimplemented method 'annotationType'");
-        }
-
         public Object getLog() {
             return null;
+        }
+
+        @Override
+        public void update(float temp, float humidity, float pressure) {
+            // TODO Auto-generated method stub
+            throw new UnsupportedOperationException("Unimplemented method 'update'");
         }
 
 }

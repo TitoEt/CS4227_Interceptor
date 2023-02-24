@@ -32,11 +32,4 @@ public class Dispatcher {
         }
     }
 
-    public void dispatchPressureChange(float pressure) {
-        for (Interceptor interceptor : interceptors) {
-            if (interceptor instanceof AlertInterceptor) {
-                ((AlertInterceptor) interceptor).onPressureChange(pressure);
-            }
-        }
-    }
 }
