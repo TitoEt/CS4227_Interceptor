@@ -15,4 +15,8 @@ public class LoggingInterceptor implements Interceptor {
             throw new UnsupportedOperationException("Unimplemented method 'annotationType'");
         }
 
+        public Object getLog() {
+            return null;
+        }
+
 }
