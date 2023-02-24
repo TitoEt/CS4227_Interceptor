@@ -9,7 +9,7 @@ public class Dispatcher {
     private List<Interceptor> interceptors = new ArrayList<>();
 
      public void registerInterceptor(LoggingInterceptor loggingInterceptor) {
-        interceptors.add((LoggingInterceptor) loggingInterceptor);
+        interceptors.add(loggingInterceptor);
     }
 
     public void removeInterceptor(Interceptor interceptor) {
