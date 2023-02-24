@@ -21,13 +21,5 @@ public class WeatherDataTest {
 		dispatcher.dispatchTemperatureChange(25.0);
 		dispatcher.dispatchHumidityChange(60.0);
 		dispatcher.dispatchPressureChange(1013.25f);
-
-		// Add assertions to verify the output of the display objects
-		// and the logging interceptor, based on the inputs provided above
-		// For example:
-		//assertEquals(expectedTemperature, currentDisplay.getTemperature(), delta);
-		//assertEquals(expectedHumidity, currentDisplay.getHumidity(), delta);
-		//assertEquals(expectedPressure, currentDisplay.getPressure(), delta);
-		//assertTrue(loggingInterceptor.getLog().contains(expectedLogMessage));
-	}
+    }
 }
