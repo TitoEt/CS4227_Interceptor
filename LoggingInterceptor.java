@@ -21,4 +21,5 @@ public class LoggingInterceptor implements Interceptor {
         onTemperatureChange(temp);
         onHumidityChange(humidity);
     }
+
 }
